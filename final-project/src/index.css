@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply font-bold px-4 py-2 bg-[#E50914] text-white rounded;
+  }
+
+  .input {
+    @apply w-full lg:min-w-[200px] px-4 py-2 bg-[#00000070] rounded border-2 border-solid border-[#ffffff36] focus:outline-1 focus:outline-green-700 focus:outline-offset-4 active:outline-none invalid:outline-red-500;
+  }
+
+  .section {
+    @apply flex flex-col lg:flex-row lg:even:flex-row-reverse gap-4 items-center bg-black text-white w-full py-7;
+  }
+
+  .content-padding {
+    @apply px-4 lg:px-[10rem];
+  }
+
+  .footer {
+    @apply bg-black text-inherit py-5;
+  }
+}
